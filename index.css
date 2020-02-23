@@ -238,7 +238,7 @@
     font-size: 50px;
     border: rgba(230, 223, 223, 0.87);
     border-style: solid;
-    justify-content: ;
+    justify-content: center;
     color: seashell;
     padding: 5px 10px;
 
@@ -436,6 +436,12 @@ footer{
     padding: 5px;
 }
 
+.choose-button:hover{
+    color: rgb(15, 15, 13);
+    background-color: blanchedalmond;
+
+}
+
 /*Sign in */
 
 .account{
@@ -562,6 +568,16 @@ footer{
     text-align: start;
     font-size: 25px;
 
+}
+
+.publish-button{
+    margin: 10px 30%;
+    border-radius: 10px;
+    background-color: rgba(78, 50, 8, 0.801);
+    color: rgb(231, 205, 171);
+    font-size: 20px;
+    border:  rgba(133, 108, 71, 0.918);
+    padding: 5px 5px;
 }
 
 .write-content input::placeholder{
