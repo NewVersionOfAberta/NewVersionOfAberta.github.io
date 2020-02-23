@@ -120,6 +120,14 @@
     grid-row: 4 / 5;
 }
 
+#main-btn-choose:hover {
+    background-color: rgb(5, 3, 3);
+    color: wheat;
+    border: solid;
+    border-color: wheat;
+}
+
+
 
 
 .main-header {
@@ -140,10 +148,15 @@
 
   
 }
-
+.main-header-grid a:hover {
+    color: rgb(210, 230, 100);
+}
 .main-header-section h1 span{
-    color-interpolation-filters: linearRGB;
     color: crimson;
+}
+
+.main-header-section h1 span:hover{
+    color: rgb(179, 230, 41);
 }
 
 @media screen and (min-width: 800px){
@@ -198,6 +211,12 @@
 
 /* Главная-2 */
 
+.main-about{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bold;
+    color: rgba(78, 50, 8, 0.918);
+}
+
 .main-about div{
     border: rgba(44, 41, 41, 0.692);
     border-style: dotted;
@@ -206,18 +225,30 @@
 .motto{
     display: grid;
     grid-area: mt;
-    background-color: rgba(218, 213, 213, 0.726);
+    background-color: rgba(31, 18, 18, 0.788);
 
     justify-content: center;
 }
 
-.motto h2{
+.motto a{
+    text-decoration: none;
+
     margin-top: 30%;
     height: 30%;
     font-size: 50px;
-    border: rgba(8, 5, 5, 0.87);
+    border: rgba(230, 223, 223, 0.87);
     border-style: solid;
-    text-align: center;
+    justify-content: ;
+    color: seashell;
+    padding: 5px 10px;
+
+}
+
+.motto a:hover{
+    color: black;
+    border: solid;
+    border-color: black;
+    background-color: blanchedalmond;
 
 }
 
@@ -230,11 +261,13 @@
     
 }
 
-.sneakers h3{
+.sneakers a{
+    text-decoration: none;
+
     font-size: 45px;
 
-    color: rgb(5, 3, 3);
-    background-color: rgba(218, 213, 213, 0.726);
+    color: rgb(227, 241, 97);
+    background-color: rgba(75, 66, 56, 0.808);
 
     justify-content: center;
 
@@ -243,32 +276,41 @@
     border: black, solid;
 }
 
+.sneakers a:hover{
+    color: chartreuse;
+}
+
 .sneakers ul{
-    background-color: rgba(218, 213, 213, 0.726);
+    background-color: rgba(124, 117, 107, 0.842);
 }
 
 .jeans{
     display: grid;
     grid-area: jns;
-    background-color: thistle;
     background-image: url(res/jeans.jpg);
     background-position: center;
     background-size: cover;
 }
 
-.jeans h3{
-    color: black;
+.jeans a{
+    text-decoration: none;
+
+    color: rgb(27, 25, 25);
     text-align: end;
     font-size: 35px;
     padding-bottom: 0ch;
-    background-color: rgba(218, 213, 213, 0.726);
+    
+    background-color: rgba(243, 255, 79, 0.582);
+}
 
+.jeans a:hover{
+    color: rgb(64, 28, 226);
 }
 
 .jeans ul{
     margin-right: 40%;
     text-align: start;
-    background-color: rgba(218, 213, 213, 0.726);
+    background-color: rgba(136, 248, 201, 0.582);
 }
 
 .statistic{
@@ -277,20 +319,22 @@
     background-size: cover;
 }
 
-.statistic h3{
-    color: black;
+.statistic a{
+    text-decoration: none;
+
+    color: rgb(82, 245, 177);
     text-align: end;
     font-size: 35px;
     padding-bottom: 0ch;
+    background-color: rgba(94, 94, 91, 0.705);
 
 }
 
 footer{
     color: seashell;
     text-align: left;
-    margin-top: 10px;
     padding-right: 25px;
-    background: linear-gradient(to right, #175858d8, #a39d9d);
+    background: linear-gradient(to right, #350a0ad8, #be9960);
     font-size: 20px;
 }
 
