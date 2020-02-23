@@ -1,0 +1,538 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Заголовок-Футер-Главная */
+
+.main-header {
+    height: 100vh;
+    background: url("res/back-4.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+@media (max-width: 800px) {
+
+    .main-h1 {
+        font-size: 40px;
+    }
+
+    .main-header-section {
+        top: 95px;
+    }
+
+    #main-btn-choose {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 799px) {
+
+    .main-h1 {
+        font-size: 70px;
+    }
+
+    .main-header-section {
+        top: 47px;
+    }
+
+    #main-btn-choose {
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 800px) {
+
+    .main-header-grid {
+       
+        grid-template-columns: repeat(2, minmax(90px, 1fr));
+        
+    }
+}
+
+@media (min-width: 799px) {
+
+    .main-header-grid {
+        
+        grid-template-columns: repeat(4, minmax(200px, 1fr));
+        
+    }
+}
+
+.main-header-section {
+    margin: 0;
+    padding: 0;
+
+    display: grid;
+    grid-template-columns: 30px auto 30px;
+    grid-template-rows: repeat(5, 1fr);
+    background-color: rgba(245, 234, 234, 0.233);
+
+    position: absolute; 
+    left: 0;
+    right: 0;    
+    bottom: 0;
+}
+
+.main-header-grid{
+    display: grid;
+    align-items: center;
+    text-align: center;
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(22, 7, 29, 0.925);
+}
+
+.main-h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(46, 0, 0, 0.87);
+   
+   
+
+    margin: 0 auto;
+    
+    text-decoration: none;
+
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+#main-btn-choose {
+    border-style: solid;
+    border-width: 3px;
+    border-color: rgba(19, 13, 13, 0.87);
+        
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+
+    background-color: rgba(245, 234, 234, 0.411);
+
+    color: rgba(8, 5, 5, 0.87);
+    padding: 10px 20px;
+    margin: auto;
+
+    grid-column: 2 / 3;
+    grid-row: 4 / 5;
+}
+
+
+
+.main-header {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.main-header-grid a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    color:white;
+    
+    text-decoration: none;
+    text-transform: uppercase;
+
+    padding: 15px 0;
+
+  
+}
+
+.main-header-section h1 span{
+    color-interpolation-filters: linearRGB;
+    color: crimson;
+}
+
+@media screen and (min-width: 800px){
+
+    .main-about{
+        height: 100vh;
+        display: grid;
+        grid-template-columns: 30% 40% 30%;
+        grid-auto-rows: minmax(100px, auto);
+        grid-template-rows: repeat(3, 1f);
+        grid-template-areas: 
+        "sn . stat"
+        "sn mt jns"
+        ". . jns";
+    
+        font-size: 25px;
+    
+        background: url(res/tram.jpg);
+    }
+
+    .statistic{
+        background: rgba(139, 136, 136, 0.685);
+    }
+
+   
+}
+
+@media screen and (max-width: 800px){
+
+    .main-about{
+        height: 100vh;
+        display: grid;
+        grid-auto-rows: minmax(100px, auto);
+        grid-auto-flow: row;
+        grid-template-rows: repeat(4, 1f);
+        grid-template-areas:
+        "sn"
+        "mt"
+        "jns"
+        "stat";
+    
+        font-size: 20px;
+    
+        background: url(res/tram.jpg);
+    }
+
+    .statistic{
+        background: rgba(170, 163, 163, 0.726);
+    }
+
+}
+
+/* Главная-2 */
+
+.main-about div{
+    border: rgba(44, 41, 41, 0.692);
+    border-style: dotted;
+}
+
+.motto{
+    display: grid;
+    grid-area: mt;
+    background-color: rgba(218, 213, 213, 0.726);
+
+    justify-content: center;
+}
+
+.motto h2{
+    margin-top: 30%;
+    height: 30%;
+    font-size: 50px;
+    border: rgba(8, 5, 5, 0.87);
+    border-style: solid;
+    text-align: center;
+
+}
+
+
+.sneakers{
+    grid-area: sn;
+    background: url(res/shoe.jpg);
+    background-size: cover;
+
+    
+}
+
+.sneakers h3{
+    font-size: 45px;
+
+    color: rgb(5, 3, 3);
+    background-color: rgba(218, 213, 213, 0.726);
+
+    justify-content: center;
+
+    text-align: center;
+
+    border: black, solid;
+}
+
+.sneakers ul{
+    background-color: rgba(218, 213, 213, 0.726);
+}
+
+.jeans{
+    display: grid;
+    grid-area: jns;
+    background-color: thistle;
+    background-image: url(res/jeans.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.jeans h3{
+    color: black;
+    text-align: end;
+    font-size: 35px;
+    padding-bottom: 0ch;
+    background-color: rgba(218, 213, 213, 0.726);
+
+}
+
+.jeans ul{
+    margin-right: 40%;
+    text-align: start;
+    background-color: rgba(218, 213, 213, 0.726);
+}
+
+.statistic{
+    display: grid;
+    grid-area: stat;
+    background-size: cover;
+}
+
+.statistic h3{
+    color: black;
+    text-align: end;
+    font-size: 35px;
+    padding-bottom: 0ch;
+
+}
+
+footer{
+    color: seashell;
+    text-align: left;
+    margin-top: 10px;
+    padding-right: 25px;
+    background: linear-gradient(to right, #175858d8, #a39d9d);
+    font-size: 20px;
+}
+
+/* Holler */
+
+.home-button{
+    color: rgb(80, 35, 74);
+    font-size: 30px;
+    background-color: rgba(252, 228, 183, 0.849);
+    z-index: 9999;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 20px;
+    padding: 10px;
+    border: solid;
+    border-color: rgba(22, 7, 29, 0.925);
+}
+
+/*Searcher */
+
+.search-field{
+    width: 70vw;
+    margin: 4px;
+    margin-left: 15px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+/* Мастера + Статьи*/
+
+.main-article{
+    color: rgba(22, 7, 29, 0.925);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: bisque;
+    border-style: solid;
+}
+
+.stat{
+    height: minmax(100vh, auto);
+}
+
+@media screen and (min-width: 600px){
+    .author-profile{
+        display: grid;
+        grid-template-columns: 1fr 5fr;
+    }
+
+}
+
+/* @media screen and (max-width: 600px){
+    .author-profile{
+       justify-content: center;
+    }   
+} */
+
+
+.user-name{
+    font-size: 30px;
+    font-weight: bold;
+    color: gray;
+
+    margin: 5px;
+}
+
+.user-status{
+    margin: 5px;
+    color: rgba(139, 136, 136, 0.685);   
+}
+
+.article-content{
+    border-width: 3px;
+    border: dotted;
+    border-color: rgba(139, 136, 136, 0.774);
+    padding: 30px;
+    margin: 5px;
+    margin-left: 15px;
+}
+
+.stand-img{
+    margin-left: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+}
+
+/* Стиль кнопки */
+
+.choose-button{
+    border-radius: 10px;
+    margin: 5px;
+    background-color: rgba(78, 50, 8, 0.801);
+    color: rgb(206, 176, 138);
+    font-size: 15px;
+    border:  rgba(133, 108, 71, 0.918);
+    padding: 5px;
+}
+
+/*Sign in */
+
+.account{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+    border-style: solid;
+    height: 100vh;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+
+    display: grid;
+    grid-template-columns: 50px auto 50px;
+    grid-template-rows: repeat(4, 1fr);
+
+}
+
+
+.account input{
+    font-size: 25px;
+    border-radius: 35px;
+    padding: 20px 14px;
+
+    outline: none;
+
+    margin: 5px auto;
+
+    width: 200px;
+
+    font-weight: bold;
+    
+}
+
+.account input[type="email"]{
+    border-color: rgba(78, 50, 8, 0.801);
+    color: rgba(78, 50, 8, 0.801);
+    background-color: rgba(78, 50, 8, 0.548);
+
+}
+
+.account input[type="password"]{
+    border-color: rgba(78, 50, 8, 0.801);
+    color: rgba(78, 50, 8, 0.801);
+    background-color: rgba(78, 50, 8, 0.548);
+
+}
+
+.sign-in input::placeholder{
+    color: rgba(78, 50, 8, 0.801);
+    font-weight: bold;
+}
+
+.sign-in{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row: 2 / 3;
+    grid-column: 2 / 3;
+    width: 0 80vw;
+}
+
+.login {
+    width: 300px;
+    color: rgb(22, 19, 19);
+    background-color: rgba(231, 225, 216, 0.685);
+}
+
+/* Account */
+
+.account-content{
+    height: 100vh;
+    color: rgba(22, 7, 29, 0.925);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: bisque;
+    border-style: solid;
+}
+
+.settings-button{
+    border-radius: 10px;
+    margin: 5px 15px;
+    background-color: rgba(78, 50, 8, 0.801);
+    color: rgb(206, 176, 138);
+    font-size: 15px;
+    border:  rgba(133, 108, 71, 0.918);
+    padding: 5px 10px;
+
+}
+
+/* Article */
+
+/* .main-content{
+    
+} */
+
+.write-content{
+    height: 100vh;
+    display: grid;
+    grid-template-rows: 15% 75%;
+
+    background-color: rgb(206, 176, 138);
+    
+    /* align-items: center; */
+}
+
+/* .header-field{
+      
+} */
+
+.write-content input{
+    margin: 5px;
+    color: rgb(22, 19, 19);
+    border-radius: 20px;
+    border: rgb(22, 19, 19);
+    text-align: start;
+    font-size: 25px;
+
+}
+
+.write-content textarea{
+    margin: 5px;
+    color: rgb(22, 19, 19);
+    border-radius: 20px;
+    border: rgb(22, 19, 19);
+    text-align: start;
+    font-size: 25px;
+
+}
+
+.write-content input::placeholder{
+    color: rgba(78, 50, 8, 0.801);
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.main-topic{
+    /* width: 90vw;
+    height: 70vh; */
+    /* align-self: center; */
+    
+    align-items: flex-start;
+    color: rgb(22, 19, 19);
+}
+
+
